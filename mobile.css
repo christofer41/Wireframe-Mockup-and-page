@@ -1,0 +1,217 @@
+html, body {
+    width: 100vw;
+    margin: 0;
+    background-color: lightblue;
+}
+
+header {
+    background-color: #5679b9;
+    border-bottom: 15px solid #4c6ab3;
+    border-bottom-left-radius: 16px;
+    border-bottom-right-radius: 16px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+
+    font-family: Palatino LinoType;
+    height: 80px;
+
+}
+
+main {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    background-image: url("images/background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+footer {
+    background-color: #5679b9;
+    border-top: 15px solid #4c6ab3;
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+    height: 10px;
+}
+
+header div {
+    border-radius: 16px;
+    display: none;
+}
+
+header >* {
+    margin: 10px;
+}
+
+#hamburgerMenu {
+    height: 300px;
+    width: 100%;
+    background-color: #5679b9;
+    position: absolute;
+
+    display: none;
+    flex-direction: column;
+    justify-items: center;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 16px;
+    border-top-right-radius: 0px;
+    border-top-left-radius: 0px;
+
+    animation: slideIn .1s ease-in;
+
+}
+
+@keyframes slideIn{
+    0%{
+        transform: translatey(-250px);
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+#hamburgerMenuLeave {
+    height: 300px;
+    width: 100%;
+    background-color: #5679b9;
+    position: absolute;
+
+    display: none;
+    flex-direction: column;
+    justify-items: center;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 16px;
+    border-top-right-radius: 0px;
+    border-top-left-radius: 0px;
+
+    animation: slideIn .1s ease-in;
+}
+
+#hamburgerMenu div {
+    background-color: #6686c4;
+    color: #d8d2b1;
+    width: 150px;
+    height: 60px;
+    margin: 10px;
+
+    border-radius: 16px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+#hamburgerSymbol {
+    z-index: 1;
+}
+
+
+#logotype {
+    background-color: white;
+    border: 18px solid #4c6ab3;
+    border-radius: 16px;
+
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "logo"
+    "founders"
+    "intro";
+}
+
+#logo {
+    margin-top: 10px;
+    grid-area: logo;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    font-family: Palatino LinoType;
+}
+
+#founders {
+    grid-area: founders;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    
+    font-family: Palatino LinoType;
+}
+
+#founders >* {
+    margin: 10px;
+}
+
+#topOfIntro {
+    grid-area: topOfIntro;
+    background-color: #4c6ab3;
+    border: 15px solid white;
+    border-bottom: none;
+
+    display: none;
+
+}
+
+#introduction {
+    grid-area: intro;
+    background-color: #4c6ab3;
+    border: 15px solid white;
+    color: #d8d2b1;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+
+    font-family: Candara;
+}
+
+#introduction h3 {
+    font-family: Palatino LinoType;
+}
+
+#introduction >* {
+    margin: 10px;
+}
+
+#founders img {
+    width: 100px;
+    height: 100px;
+    border-radius: 36px;
+}
+
+#news {
+    border: 18px solid #4c6ab3;
+    background-color: #9ab3e0;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#news h1 {
+    font-family: Palatino LinoType;
+}
+
+#news div h3 {
+    font-family: Palatino LinoType;
+
+    margin: 10px;
+}

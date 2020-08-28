@@ -1,0 +1,174 @@
+html, body {
+    width: 100%;
+    margin: 0;
+    background-color: lightblue;
+}
+
+header {
+    background-color: #5679b9;
+    border-bottom: 15px solid #4c6ab3;
+    border-bottom-left-radius: 16px;
+    border-bottom-right-radius: 16px;
+    display: flex;
+    justify-content: center;
+
+    font-family: Palatino LinoType;
+
+}
+
+main {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    background-image: url("images/background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+main >* {
+    margin: 10px
+}
+
+footer {
+    background-color: #5679b9;
+    border-top: 15px solid #4c6ab3;
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+    height: 10px;
+}
+
+header div {
+    background-color: #6686c4;
+    color: #d8d2b1;
+    width: 150px;
+    height: 60px;
+    margin: 10px;
+
+    border-radius: 16px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header div :hover {
+    background-color: #4c6ab3;
+    cursor:pointer;
+    color: #d8d2b1;
+    width: 160px;
+    height: 60px;
+
+    border-radius: 16px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#hamburgerSymbol {
+    display: none;
+}
+
+#hamburgerMenu {
+    display: none;
+}
+
+#logotype {
+    border: 18px solid #4c6ab3;
+    max-width: 1100px;
+    height: 700px;
+    background-color: white;
+    border-radius: 16px;
+
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 50% 50%;
+    grid-template-areas: 
+    "logo topOfIntro"
+    "founders intro";
+
+}
+
+#logo {
+    grid-area: logo;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    font-family: Palatino LinoType;
+}
+
+#founders {
+    grid-area: founders;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    
+    font-family: Palatino LinoType;
+}
+
+#founders >* {
+    margin: 10px;
+}
+
+#topOfIntro {
+    grid-area: topOfIntro;
+    background-color: #4c6ab3;
+    border: 15px solid white;
+    border-bottom: none;
+}
+
+#introduction {
+    grid-area: intro;
+    background-color: #4c6ab3;
+    border: 15px solid white;
+    border-top: none;
+    color: #d8d2b1;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    font-family: Candara;
+}
+
+#introduction h3 {
+    font-family: Palatino LinoType;
+}
+
+#introduction >* {
+    margin: 10px;
+}
+
+#founders img {
+    width: 100px;
+    height: 100px;
+    border-radius: 36px;
+}
+
+#news {
+    border: 18px solid #4c6ab3;
+    background-color: #9ab3e0;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#news h1 {
+    font-family: Palatino LinoType;
+}
+
+#news div h3 {
+    font-family: Palatino LinoType;
+
+    margin: 10px;
+}
